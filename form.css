@@ -1,0 +1,84 @@
+#btn{
+    background-color: pink;
+    color:black;
+    padding: 5px;
+    float: center;
+    align-items: center;
+    width:20%;
+    height:20%;
+    border-radius: 50%;
+    align-content: center;
+}
+body{
+    align-items: center;
+    align-content: center;
+}
+fieldset{
+    width:20%;
+    height:20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5%;
+
+    align-content: center;
+    background-color: darksalmon;
+    
+}
+input{
+    width:50%;
+    background-color: antiquewhite;
+    height:20%;
+}
+textarea{
+    width:50%;
+    background-color: antiquewhite;
+    height:20%;
+}
+/* form{
+    width:50%;
+    height:50%;
+    padding:2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    align-content: center;
+    background-color: burlywood;
+} */
+body{
+    background:linear-gradient(to right,#9c2b09,#8ecdff);
+}
+
+.menu {
+    text-align: right;
+    flex:1;
+    justify-content: right;
+     background-color: rgb(173, 173, 230);
+ }
+  .menu a{
+     text-decoration: none;
+ }
+ nav ul li{
+   
+    padding : 0 10px 0 10px;
+    margin: 5px auto;
+    align-items: center;
+    display: inline-flex;
+    
+}
+a:hover{
+
+    color:crimson;
+
+}
+ a:link{
+    color:cadetblue;
+ }
+ a:active{
+    color:green;
+ }
+ a:visited{
+    color:purple;
+ }

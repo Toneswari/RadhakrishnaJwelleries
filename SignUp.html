@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="Home.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+ 
+    <link rel="stylesheet" href="Jquery-ui/jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="Jquery-ui/jquery-ui-1.13.2/jquery-ui.structure.css">
+    <link rel="stylesheet" href="Jquery-ui/jquery-ui-1.13.2/jquery-ui.theme.css">
+
+    <script src="js/bootstrap.js" ></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="Jquery-ui/jquery-ui-1.13.2/jquery-ui.js"type="text/javascript"></script>
+</head>
+<body>
+    <script>
+//         function generateOTP(){
+//             var digits='0123456789';
+//             let OTP='';
+//             for (let i = 0; i < 4; i++ ) {
+//         OTP += digits[Math.floor(Math.random() * 10)];
+//     }
+//     return OTP;
+// }
+//         generateOTP();
+$(document).ready(function(){
+    $("#dob").datepicker({
+    changeYear:true,
+    changeMonth:true,
+    showOtherMonths:true
+})
+});
+
+
+    </script>
+
+   
+      <div class="jumbotron jumbotron-fluid">
+        
+        <form class="jumbotron text-center" onsubmit="return submit()" name="form">
+    <fieldset class="d-block mx:auto;">
+        <br><br>
+        <legend><h3 style="align-content: center;
+           color:darkred" class="box"><i><b>Sign Up Form</b></i></h3><br></legend>
+       <label for="username">Username:</label>
+       <input type="text" placeholder="Enter your name" id="uname"><br><br>
+       <label for="EmailId">Email:</label>
+       <input type="email" placeholder="XYZ@gmail.com" id="mail"><br><br>
+       <label for="Phonenumber">Phone Number:</label>
+       <input type="number" id="number"placeholder="Enter mobile number" maxlength="10" required><br><br>
+       <!-- <button type="button" value="OTP" onclick="generateOTP()">OTP</button><br><br>
+        <label for="OTP">OTP:</label>
+        <input type="number" placeholder=" Enter OTP" required><br><br> -->
+        <div id="dateofbirth">
+            Enter Date Of Birth:
+            <input id="dob" placeholder="enter dateofbirth" type="text"><br><br>
+        </div>
+       <label for="language">Choose Language:</label>
+       <input list="lang" >
+           <datalist id="lang">
+            <option>
+                Telugu
+            </option>
+            <option>
+                Hindi
+            </option>
+            <option>
+                English
+            </option>
+            <option>
+                Marathi
+            </option>
+            <option>
+                Tamil   
+            </option>
+           </datalist><br><br>
+           <label for="location">Locaton:</label>
+           <select>
+           <option selected>Hyderabad</option>
+           <option>Chennai</option>
+           <option>Mumbai</option>
+           </select><br><br>
+           <label for="create password">Create password:</label>
+           <input type="password" id="pass1" name="password1"><br><br>
+           <label for="confirm password">confirm password:</label>
+           <input type="password" id="pass2" name="password2"><br><br>
+           <button type="submit" class="btn btn-primary btn-lg btn-block" >Sign Up</button><br><br><br>
+    
+      
+    </form>
+</div>
+</fieldset><br>
+    <script>
+        function submit(){
+            var pass1=document.form.password1.value;
+            var pass2=document.form.password2.value;
+            if(pass1==pass2){
+                
+                alert("submitted the form");
+               
+                return true;
+            }
+            else{
+            alert("password mismatch");
+            return false;
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
